@@ -1,43 +1,19 @@
 {
   "version": 2,
   "functions": {
-    "index.php": {
+    "api/index.php": {
       "runtime": "vercel-php@0.7.3",
-      "includeFiles": "includes/**"
-    },
-    "pages/*.php": {
-      "runtime": "vercel-php@0.7.3",
-      "includeFiles": "includes/**"
+      "includeFiles": "{includes/**,pages/**,index.php}"
     }
   },
   "routes": [
     {
-      "src": "/(wp-content/.*)",
+      "src": "/(wp-content/.*|wp-includes/.*|_external/.*)",
       "dest": "/$1"
     },
     {
-      "src": "/(wp-includes/.*)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(_external/.*)",
-      "dest": "/$1"
-    },
-    {
-      "src": "/pages/(.*\\.php)",
-      "dest": "/pages/$1"
-    },
-    {
-      "src": "/pages/(.*)",
-      "dest": "/pages/$1.php"
-    },
-    {
-      "src": "/index(\\.php)?",
-      "dest": "/index.php"
-    },
-    {
-      "src": "/",
-      "dest": "/index.php"
+      "src": "/(.*)",
+      "dest": "/api/index.php"
     }
   ]
 }
