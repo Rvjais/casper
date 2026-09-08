@@ -1,42 +1,49 @@
 <?php
-$uri = urldecode(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH));
-$path = ltrim($uri, '/');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
-// Root homepage
-if ($path === '' || $path === 'index.php') {
-    $file = dirname(__DIR__) . '/index.php';
-    if (file_exists($file)) {
-        require $file;
+try {
+    $uri = $_SERVER['REQUEST_URI'] ?? '/';
+    $path = parse_url($uri, PHP_URL_PATH);
+    $path = ltrim($path, '/');
+
+    $rootDir = dirname(__DIR__);
+
+    if ($path === '' || $path === 'index.php') {
+        $target = $rootDir . '/index.php';
+    } elseif (strpos($path, 'pages/') === 0) {
+        $slug = substr($path, 6);
+        if (substr($slug, -4) === '.php') {
+            $slug = substr($slug, 0, -4);
+        }
+        $target = $rootDir . '/pages/' . $slug . '.php';
+    } else {
+        $target = $rootDir . '/' . $path;
+        if (!file_exists($target)) {
+            $target = $rootDir . '/' . $path . '.php';
+        }
+    }
+
+    if (file_exists($target) && is_file($target)) {
+        chdir(dirname($target));
+        require $target;
         exit;
     }
-}
 
-// Pages subfolder (/pages/xyz or /pages/xyz.php)
-if (strpos($path, 'pages/') === 0) {
-    $page = substr($path, 6);
-    if (substr($page, -4) === '.php') {
-        $page = substr($page, 0, -4);
-    }
-    $pageFile = dirname(__DIR__) . '/pages/' . $page . '.php';
-    if (file_exists($pageFile)) {
-        require $pageFile;
+    if (file_exists($rootDir . '/index.php')) {
+        chdir($rootDir);
+        require $rootDir . '/index.php';
         exit;
     }
-}
 
-// Direct php file in root
-$rootFile = dirname(__DIR__) . '/' . $path;
-if (file_exists($rootFile) && substr($rootFile, -4) === '.php') {
-    require $rootFile;
-    exit;
-}
+    http_response_code(404);
+    echo "<h1>404 Not Found</h1><p>Path: " . htmlspecialchars($path) . "</p>";
 
-// Fallback to homepage
-$indexFile = dirname(__DIR__) . '/index.php';
-if (file_exists($indexFile)) {
-    require $indexFile;
-    exit;
+} catch (\Throwable $e) {
+    http_response_code(500);
+    echo "<h1>PHP Error</h1>";
+    echo "<p><strong>Message:</strong> " . htmlspecialchars($e->getMessage()) . "</p>";
+    echo "<p><strong>File:</strong> " . htmlspecialchars($e->getFile()) . " on line " . $e->getLine() . "</p>";
+    echo "<pre>" . htmlspecialchars($e->getTraceAsString()) . "</pre>";
 }
-
-http_response_code(404);
-echo "404 Not Found: " . htmlspecialchars($path);
