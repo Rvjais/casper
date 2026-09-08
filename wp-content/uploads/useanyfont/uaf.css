@@ -1,0 +1,28 @@
+				@font-face {
+					font-family: 'futurapt';
+					src: url('8314futurapt.woff2') format('woff2'),
+						url('8314futurapt.woff') format('woff');
+					   font-display: auto;
+				}
+
+				.futurapt{font-family: 'futurapt' !important;}
+
+						@font-face {
+					font-family: 'futuraptbold';
+					src: url('8976futuraptbold.woff2') format('woff2'),
+						url('8976futuraptbold.woff') format('woff');
+					   font-display: auto;
+				}
+
+				.futuraptbold{font-family: 'futuraptbold' !important;}
+
+						@font-face {
+					font-family: 'futuraptmedium';
+					src: url('4275futuraptmedium.woff2') format('woff2'),
+						url('4275futuraptmedium.woff') format('woff');
+					   font-display: auto;
+				}
+
+				.futuraptmedium{font-family: 'futuraptmedium' !important;}
+
+		

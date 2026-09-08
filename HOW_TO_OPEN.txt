@@ -1,0 +1,30 @@
+Website: Casa Privée (Pure PHP Edition)
+Architecture: Modular PHP with includes/ for Header, Navigation, Footer, and Scripts
+
+──────────────────────────────────────────────────
+HOW TO RUN THE PHP SITE
+──────────────────────────────────────────────────
+
+1. Open a terminal / command prompt in this folder:
+   c:\Users\Veer\Desktop\office\Casper
+
+2. Start the built-in PHP development server:
+   php -S localhost:8080
+
+3. Open in your web browser:
+   http://localhost:8080/index.php
+
+──────────────────────────────────────────────────
+FOLDER STRUCTURE
+──────────────────────────────────────────────────
+
+  index.php       → Homepage (root)
+  includes/       → Modular shared components:
+                    • header.php      (Top info bar, logo, and responsive navigation)
+                    • footer.php      (Footer columns, contact info, social links, legal notices)
+                    • scripts.php     (Scroll-to-top button, JS libraries, tracking)
+                    • head-assets.php (Common stylesheet references)
+  pages/          → Subpages in pure PHP (*.php)
+  wp-content/     → Theme stylesheets, scripts, fonts, and images
+  wp-includes/    → WordPress core assets
+  _external/      → External static assets (fonts, icons)
