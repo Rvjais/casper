@@ -51,6 +51,215 @@ if (!isset($pageSlug)) $pageSlug = '';
 </li></ul></div></nav></div> </div>
 <!-- end container_wrap-->
 </div>
+<style id="casper-navbar-and-cards-fix">
+/* ===== NAVBAR & LOGO OVERLAP FIX ===== */
+#top #header_main {
+    height: 90px !important;
+    line-height: 90px !important;
+}
+#top #header_main .container.av-logo-container,
+#top #header_main .inner-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    max-width: 1310px !important;
+    height: 90px !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+    padding: 0 30px !important;
+}
+#top .logo {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    max-width: 220px !important;
+    height: 100% !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    float: none !important;
+    margin: 0 !important;
+    z-index: 5 !important;
+}
+#top .logo a {
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+#top .logo img {
+    max-height: 52px !important;
+    max-width: 220px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 !important;
+}
+#top .main_menu {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    right: auto !important;
+    left: auto !important;
+    float: none !important;
+    z-index: 10 !important;
+    height: 100% !important;
+}
+#top .avia-menu.av-main-nav-wrap ul.av-main-nav {
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 4px !important;
+    list-style: none !important;
+}
+#top .avia-menu.av-main-nav-wrap ul.av-main-nav > li > a {
+    padding: 0 12px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    line-height: 90px !important;
+    height: 90px !important;
+    display: flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+    color: #ffffff !important;
+}
+#top .avia-menu.av-main-nav-wrap ul.av-main-nav > li.av-menu-button > a {
+    height: 38px !important;
+    line-height: 38px !important;
+    padding: 0 16px !important;
+    margin: auto 0 auto 10px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 3px !important;
+}
+#top .main_menu .menu-item-has-children:hover > .sub-menu {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+#top .main_menu .sub-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background: #111111 !important;
+    min-width: 230px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5) !important;
+    border-top: 2px solid #d39592 !important;
+    padding: 8px 0 !important;
+    z-index: 9999 !important;
+    transition: opacity 0.2s ease, visibility 0.2s ease !important;
+}
+#top .main_menu .sub-menu li a {
+    padding: 10px 18px !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    height: auto !important;
+    display: block !important;
+    color: #e0e0e0 !important;
+    white-space: nowrap !important;
+}
+#top .main_menu .sub-menu li a:hover {
+    background-color: #222222 !important;
+    color: #d39592 !important;
+}
+
+/* ===== FEATURE CARDS HEIGHT & PADDING FIX ===== */
+#top #av_section_3 .flex_column_table,
+#top .flex_column_table:has(.three-box-hover) {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 20px !important;
+    width: 100% !important;
+    table-layout: auto !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+#top #av_section_3 .av-flex-placeholder,
+#top .flex_column_table:has(.three-box-hover) .av-flex-placeholder {
+    display: none !important;
+}
+#top #av_section_3 .flex_column.three-box-hover,
+#top .flex_column.three-box-hover {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 35px 25px !important;
+    min-height: 380px !important;
+    max-height: 480px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    border-radius: 8px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+#top .three-box-hover:hover {
+    background-color: #d39592 !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3) !important;
+}
+#top .three-box-hover .avia-image-container {
+    margin: 0 0 15px 0 !important;
+}
+#top .three-box-hover .avia-image-container img {
+    height: 52px !important;
+    max-height: 52px !important;
+    width: auto !important;
+    object-fit: contain !important;
+}
+#top .three-box-hover .av-special-heading {
+    padding-bottom: 8px !important;
+    margin-bottom: 10px !important;
+}
+#top .three-box-hover .av-special-heading h4 {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+#top .three-box-hover .avia_textblock,
+#top .three-box-hover .avia_textblock p {
+    font-size: 14.5px !important;
+    line-height: 1.55 !important;
+    color: #f0f0f0 !important;
+    margin: 0 !important;
+}
+
+@media only screen and (max-width: 989px) {
+    #top #header_main .container.av-logo-container,
+    #top #header_main .inner-container {
+        padding: 0 15px !important;
+    }
+    #top .logo img {
+        max-height: 42px !important;
+        max-width: 170px !important;
+    }
+    #top .avia-menu.av-main-nav-wrap ul.av-main-nav > li > a {
+        padding: 0 8px !important;
+        font-size: 12px !important;
+    }
+    #top #av_section_3 .flex_column_table,
+    #top .flex_column_table:has(.three-box-hover) {
+        flex-direction: column !important;
+    }
+    #top #av_section_3 .flex_column.three-box-hover,
+    #top .flex_column.three-box-hover {
+        min-height: auto !important;
+        max-height: none !important;
+        margin-bottom: 20px !important;
+        width: 100% !important;
+    }
+}
+</style>
 <div class="header_bg"></div>
 <!-- end header -->
 </header>
