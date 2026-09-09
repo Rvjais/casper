@@ -3,3 +3,5 @@ node_modules
 *.tmp
 .DS_Store
 Thumbs.db
+www_casaprivee_com_scraped*
+*.zip
