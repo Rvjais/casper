@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+
+Options -Indexes +FollowSymLinks
+RewriteEngine On
+
+# If the requested file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# If .php file exists, rewrite to it (e.g. /pages/about-us -> /pages/about-us.php)
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.*)$ $1.php [L]

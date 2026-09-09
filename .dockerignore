@@ -1,0 +1,10 @@
+.git
+.github
+.gitignore
+.dockerignore
+.vercel
+node_modules
+*.tmp
+api/
+vercel.json
+HOW_TO_OPEN.txt
