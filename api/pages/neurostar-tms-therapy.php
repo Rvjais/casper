@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html class="html_stretched responsive av-preloader-disabled html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking_disabled html_header_topbar_active html_header_transparency html_mobile_menu_phone html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_minimal_header html_av-overlay-side html_av-overlay-side-classic html_av-submenu-noclone html_entry_id_299 av-cookies-no-cookie-consent av-no-preview av-default-lightbox html_text_menu_active av-mobile-menu-switch-default avia_desktop js_active avia_transform avia_transform3d avia-webkit avia-webkit-124 avia-chrome avia-chrome-124 no-touch-device pointer-device-fine pointer-device-coarse html_av-submenu-visible" lang="en-US"><head>
 <meta charset="utf-8"/>
-<link href="https://www.casaprivee.com/en-us/" hreflang="en-US" rel="alternate"/>
+<link href="../index.php" hreflang="en-US" rel="alternate"/>
 <!-- mobile setting -->
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <!-- Scripts/CSS and wp_head hook -->
@@ -950,7 +950,7 @@ PLAu:16
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-top-level menu-item-top-level-3 active-parent-item dropdown_ul_available current-menu-item" id="menu-item-1164" role="menuitem"><a href="treatment-programs.php" itemprop="url" style="" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">Treatment Programs</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span><span class="dropdown_available"></span></a>
 <ul class="sub-menu" style="display: block; opacity: 0; visibility: hidden;">
 <li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-2294" role="menuitem"><a href="drug-addiction-rehabilitation.php" itemprop="url" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">Alcohol &amp; Drug Rehabilitation</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-299 current_page_item current-menu-item" id="menu-item-377" role="menuitem"><a href="https://www.casaprivee.com/neurostar-tms-therapy/#top" itemprop="url" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">NeuroStar TMS Therapy</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-299 current_page_item current-menu-item" id="menu-item-377" role="menuitem"><a href="neurostar-tms-therapy.php" itemprop="url" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">NeuroStar TMS Therapy</span></a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-887" role="menuitem"><a href="hyperbaric-oxygen-therapy-hbot.php" itemprop="url" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">Hyperbaric Oxygen Therapy</span></a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-955" role="menuitem"><a href="da-vinci-theralight-360.php" itemprop="url" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">TheraLight 360</span></a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-908" role="menuitem"><a href="super-human-protocol.php" itemprop="url" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">Super Human Protocol</span></a></li>
@@ -1388,8 +1388,9 @@ var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiratio
             var trafficScript = document.createElement('script'); trafficScript.src = 'https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'; window.document.head.appendChild(trafficScript);</script>
 <script>window.addEventListener('click', function (elem) { var _elem$target, _elem$target$dataset, _window, _window$_trfq; return (elem === null || elem === void 0 ? void 0 : (_elem$target = elem.target) === null || _elem$target === void 0 ? void 0 : (_elem$target$dataset = _elem$target.dataset) === null || _elem$target$dataset === void 0 ? void 0 : _elem$target$dataset.eid) && ((_window = window) === null || _window === void 0 ? void 0 : (_window$_trfq = _window._trfq) === null || _window$_trfq === void 0 ? void 0 : _window$_trfq.push(["cmdLogEvent", "click", elem.target.dataset.eid]));});</script>
 <script onload="window.tti.calculateTTI()" src="../_external/img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"></script>
-<script id="casper-video-autoplay-helper">
+<script id="casper-runtime-helper">
 (function() {
+    // 1. Ensure background videos autoplay smoothly
     function initVideos() {
         var videos = document.querySelectorAll('.av-section-video-bg video, video.avia_video, .avia-section video');
         videos.forEach(function(v) {
@@ -1418,6 +1419,43 @@ var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiratio
             }
         });
     }
+
+    // 2. Prevent unwanted redirections on menu clicks / double clicks
+    document.addEventListener('click', function(e) {
+        var a = e.target.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href');
+        if (!href) return;
+        
+        // Prevent jump on # or #top in main navigation menus
+        if (href === '#' || href === '#top') {
+            if (a.closest('.main_menu') || a.closest('.av-burger-overlay')) {
+                e.preventDefault();
+            }
+        }
+        
+        // Intercept any stray casaprivee.com links and route locally
+        if (/^https?:\/\/(?:www\.)?casaprivee\.com/i.test(href)) {
+            var path = href.replace(/^https?:\/\/(?:www\.)?casaprivee\.com\/?/i, '').replace(/#.*$/, '').replace(/\/$/, '');
+            e.preventDefault();
+            if (!path || path === 'en-us') {
+                window.location.href = window.location.pathname.includes('/pages/') ? '../index.php' : 'index.php';
+            } else {
+                var targetFile = path.replace(/\//g, '__') + '.php';
+                window.location.href = window.location.pathname.includes('/pages/') ? targetFile : 'pages/' + targetFile;
+            }
+        }
+    }, true);
+
+    document.addEventListener('dblclick', function(e) {
+        var a = e.target.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href');
+        if (!href || href === '#' || href === '#top') {
+            e.preventDefault();
+        }
+    }, true);
+
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initVideos);
     } else {

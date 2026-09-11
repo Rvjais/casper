@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html class="html_stretched responsive av-preloader-disabled html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking_disabled html_header_topbar_active html_mobile_menu_phone html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_minimal_header html_av-overlay-side html_av-overlay-side-classic html_av-submenu-noclone html_entry_id_3063 av-cookies-no-cookie-consent av-no-preview av-default-lightbox html_text_menu_active av-mobile-menu-switch-default avia_desktop js_active avia_transform avia_transform3d avia-webkit avia-webkit-124 avia-chrome avia-chrome-124 no-touch-device pointer-device-fine pointer-device-coarse html_av-submenu-visible" lang="en-US"><head>
 <meta charset="utf-8"/>
-<link href="https://www.casaprivee.com/en-us/" hreflang="en-US" rel="alternate"/>
+<link href="../index.php" hreflang="en-US" rel="alternate"/>
 <!-- mobile setting -->
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <!-- Scripts/CSS and wp_head hook -->
@@ -975,7 +975,7 @@ PLAu:16
 <!-- end header -->
 </header>
 <div class="all_colors" data-scroll-offset="88" id="main">
-<div class="stretch_full container_wrap alternate_color light_bg_color title_container"><div class="container"><h1 class="main-title entry-title"><a href="best-autism-treatment-miami-for-toddlers-and-young-children.php" itemprop="headline" rel="bookmark" title="Permanent Link: The Best Autism Treatment in Miami for Toddlers and Young Children | Casa Privee">The Best Autism Treatment in Miami for Toddlers and Young Children | Casa Privee</a></h1><div class="breadcrumb breadcrumbs avia-breadcrumbs"><div class="breadcrumb-trail"><span class="trail-before"><span class="breadcrumb-title">You are here:</span></span> <span itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="trail-begin" href="../index.php" itemprop="url" rel="home" title="Casa Privée - Brickell, Miami"><span itemprop="name">Home</span></a><span class="hidden" itemprop="position">1</span></span></span> <span class="sep">/</span> <span itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="insights.php" itemprop="url" title="Blog"><span itemprop="name">Blog</span></a><span class="hidden" itemprop="position">2</span></span></span> <span class="sep">/</span> <span itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="https://www.casaprivee.com/category/casa-privee-miami/" itemprop="url"><span itemprop="name">Casa Privee Miami</span></a><span class="hidden" itemprop="position">3</span></span></span> <span class="sep">/</span> <span class="trail-end">The Best Autism Treatment in Miami for Toddlers and Young Children | Casa...</span></div></div></div></div><div class="avia-section av-ke3j93-c82be6ec195e26bc9de20ee8443e38db main_color avia-section-default avia-no-border-styling avia-builder-el-0 el_before_av_section avia-builder-el-first avia-bg-style-scroll container_wrap fullsize" id="av_section_1"><div class="container av-section-cont-open"><main class="template-page content av-content-full alpha units" itemscope="itemscope" itemtype="https://schema.org/Blog" role="main"><div class="post-entry post-entry-type-page post-entry-3063"><div class="entry-content-wrapper clearfix">
+<div class="stretch_full container_wrap alternate_color light_bg_color title_container"><div class="container"><h1 class="main-title entry-title"><a href="best-autism-treatment-miami-for-toddlers-and-young-children.php" itemprop="headline" rel="bookmark" title="Permanent Link: The Best Autism Treatment in Miami for Toddlers and Young Children | Casa Privee">The Best Autism Treatment in Miami for Toddlers and Young Children | Casa Privee</a></h1><div class="breadcrumb breadcrumbs avia-breadcrumbs"><div class="breadcrumb-trail"><span class="trail-before"><span class="breadcrumb-title">You are here:</span></span> <span itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a class="trail-begin" href="../index.php" itemprop="url" rel="home" title="Casa Privée - Brickell, Miami"><span itemprop="name">Home</span></a><span class="hidden" itemprop="position">1</span></span></span> <span class="sep">/</span> <span itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="insights.php" itemprop="url" title="Blog"><span itemprop="name">Blog</span></a><span class="hidden" itemprop="position">2</span></span></span> <span class="sep">/</span> <span itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="category__casa-privee-miami.php" itemprop="url"><span itemprop="name">Casa Privee Miami</span></a><span class="hidden" itemprop="position">3</span></span></span> <span class="sep">/</span> <span class="trail-end">The Best Autism Treatment in Miami for Toddlers and Young Children | Casa...</span></div></div></div></div><div class="avia-section av-ke3j93-c82be6ec195e26bc9de20ee8443e38db main_color avia-section-default avia-no-border-styling avia-builder-el-0 el_before_av_section avia-builder-el-first avia-bg-style-scroll container_wrap fullsize" id="av_section_1"><div class="container av-section-cont-open"><main class="template-page content av-content-full alpha units" itemscope="itemscope" itemtype="https://schema.org/Blog" role="main"><div class="post-entry post-entry-type-page post-entry-3063"><div class="entry-content-wrapper clearfix">
 <div class="flex_column av-ivznsn-b00de6845abd155965d749fe22bb6dd2 av_one_fourth avia-builder-el-1 el_before_av_one_fourth avia-builder-el-first first flex_column_div"><section class="av_textblock_section av-1qdv4n-8a296dcc646aab764614314fd4492d60" itemprop="blogPost" itemscope="itemscope" itemtype="https://schema.org/BlogPosting"><div class="avia_textblock" itemprop="text"><p style="text-align: center;"><a href="hyperbaric-oxygen-therapy-hbot.php">Regenerative Care</a></p>
 </div></section></div><div class="flex_column av-f5rhgn-1e07d41092d89f6820bf9ab4cd2ef42d av_one_fourth avia-builder-el-3 el_after_av_one_fourth el_before_av_hr flex_column_div"><section class="av_textblock_section av-eb739j-cf6711709a7a52be56d65b6a9204675a" itemprop="blogPost" itemscope="itemscope" itemtype="https://schema.org/BlogPosting"><div class="avia_textblock" itemprop="text"><p style="text-align: center;"><a href="hyperbaric-oxygen-therapy-hbot.php">Full-Body Recovery</a></p>
 </div></section></div><div class="hr av-cvuvrr-249782e6a2b20d828f91f1cd19d371a8 hr-custom avia-builder-el-5 el_after_av_one_fourth el_before_av_heading hr-center hr-icon-no"><span class="hr-inner inner-border-av-border-fat"><span class="hr-inner-style"></span></span></div>
@@ -1328,8 +1328,9 @@ var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiratio
             var trafficScript = document.createElement('script'); trafficScript.src = 'https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'; window.document.head.appendChild(trafficScript);</script>
 <script>window.addEventListener('click', function (elem) { var _elem$target, _elem$target$dataset, _window, _window$_trfq; return (elem === null || elem === void 0 ? void 0 : (_elem$target = elem.target) === null || _elem$target === void 0 ? void 0 : (_elem$target$dataset = _elem$target.dataset) === null || _elem$target$dataset === void 0 ? void 0 : _elem$target$dataset.eid) && ((_window = window) === null || _window === void 0 ? void 0 : (_window$_trfq = _window._trfq) === null || _window$_trfq === void 0 ? void 0 : _window$_trfq.push(["cmdLogEvent", "click", elem.target.dataset.eid]));});</script>
 <script onload="window.tti.calculateTTI()" src="../_external/img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"></script>
-<script id="casper-video-autoplay-helper">
+<script id="casper-runtime-helper">
 (function() {
+    // 1. Ensure background videos autoplay smoothly
     function initVideos() {
         var videos = document.querySelectorAll('.av-section-video-bg video, video.avia_video, .avia-section video');
         videos.forEach(function(v) {
@@ -1358,6 +1359,43 @@ var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiratio
             }
         });
     }
+
+    // 2. Prevent unwanted redirections on menu clicks / double clicks
+    document.addEventListener('click', function(e) {
+        var a = e.target.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href');
+        if (!href) return;
+        
+        // Prevent jump on # or #top in main navigation menus
+        if (href === '#' || href === '#top') {
+            if (a.closest('.main_menu') || a.closest('.av-burger-overlay')) {
+                e.preventDefault();
+            }
+        }
+        
+        // Intercept any stray casaprivee.com links and route locally
+        if (/^https?:\/\/(?:www\.)?casaprivee\.com/i.test(href)) {
+            var path = href.replace(/^https?:\/\/(?:www\.)?casaprivee\.com\/?/i, '').replace(/#.*$/, '').replace(/\/$/, '');
+            e.preventDefault();
+            if (!path || path === 'en-us') {
+                window.location.href = window.location.pathname.includes('/pages/') ? '../index.php' : 'index.php';
+            } else {
+                var targetFile = path.replace(/\//g, '__') + '.php';
+                window.location.href = window.location.pathname.includes('/pages/') ? targetFile : 'pages/' + targetFile;
+            }
+        }
+    }, true);
+
+    document.addEventListener('dblclick', function(e) {
+        var a = e.target.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href');
+        if (!href || href === '#' || href === '#top') {
+            e.preventDefault();
+        }
+    }, true);
+
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initVideos);
     } else {

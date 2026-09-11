@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html class="html_stretched responsive av-preloader-disabled html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking_disabled html_header_topbar_active html_header_transparency html_header_glassy html_mobile_menu_phone html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_minimal_header html_av-overlay-side html_av-overlay-side-classic html_av-submenu-noclone html_entry_id_428 av-cookies-no-cookie-consent av-no-preview av-default-lightbox html_text_menu_active av-mobile-menu-switch-default avia_desktop js_active avia_transform avia_transform3d avia-webkit avia-webkit-124 avia-chrome avia-chrome-124 no-touch-device pointer-device-fine pointer-device-coarse html_av-submenu-visible" lang="en-US"><head><meta content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==" http-equiv="origin-trial"/>
 <meta charset="utf-8"/>
-<link href="https://www.casaprivee.com/en-us/" hreflang="en-US" rel="alternate"/>
+<link href="../index.php" hreflang="en-US" rel="alternate"/>
 <!-- mobile setting -->
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <!-- Scripts/CSS and wp_head hook -->
@@ -1014,7 +1014,7 @@ PLAu:16
 <li class="menu-item menu-item-type-post_type menu-item-object-page" id="menu-item-1022" role="menuitem"><a href="emsella.php" itemprop="url" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">EmSella</span></a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-428 current_page_item menu-item-top-level menu-item-top-level-4 current-menu-item" id="menu-item-783" role="menuitem"><a href="https://www.casaprivee.com/contact-us/#top" itemprop="url" style="" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">Contact Us</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-428 current_page_item menu-item-top-level menu-item-top-level-4 current-menu-item" id="menu-item-783" role="menuitem"><a href="contact-us.php" itemprop="url" style="" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">Contact Us</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom av-menu-button av-menu-button-bordered menu-item-top-level menu-item-top-level-5" id="menu-item-406" role="menuitem"><a href="https://casaprivee.as.me/schedule/b07ae107" itemprop="url" style="" tabindex="0"><span class="avia-bullet"></span><span class="avia-menu-text">BOOK AN APPOINTMENT</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
 <li class="av-burger-menu-main menu-item-avia-special" role="menuitem">
 <a aria-hidden="false" aria-label="Menu" href="#" style="">
@@ -1428,8 +1428,9 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
             var trafficScript = document.createElement('script'); trafficScript.src = 'https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'; window.document.head.appendChild(trafficScript);</script>
 <script>window.addEventListener('click', function (elem) { var _elem$target, _elem$target$dataset, _window, _window$_trfq; return (elem === null || elem === void 0 ? void 0 : (_elem$target = elem.target) === null || _elem$target === void 0 ? void 0 : (_elem$target$dataset = _elem$target.dataset) === null || _elem$target$dataset === void 0 ? void 0 : _elem$target$dataset.eid) && ((_window = window) === null || _window === void 0 ? void 0 : (_window$_trfq = _window._trfq) === null || _window$_trfq === void 0 ? void 0 : _window$_trfq.push(["cmdLogEvent", "click", elem.target.dataset.eid]));});</script>
 <script onload="window.tti.calculateTTI()" src="../_external/img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"></script>
-<script id="casper-video-autoplay-helper">
+<script id="casper-runtime-helper">
 (function() {
+    // 1. Ensure background videos autoplay smoothly
     function initVideos() {
         var videos = document.querySelectorAll('.av-section-video-bg video, video.avia_video, .avia-section video');
         videos.forEach(function(v) {
@@ -1458,6 +1459,43 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
             }
         });
     }
+
+    // 2. Prevent unwanted redirections on menu clicks / double clicks
+    document.addEventListener('click', function(e) {
+        var a = e.target.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href');
+        if (!href) return;
+        
+        // Prevent jump on # or #top in main navigation menus
+        if (href === '#' || href === '#top') {
+            if (a.closest('.main_menu') || a.closest('.av-burger-overlay')) {
+                e.preventDefault();
+            }
+        }
+        
+        // Intercept any stray casaprivee.com links and route locally
+        if (/^https?:\/\/(?:www\.)?casaprivee\.com/i.test(href)) {
+            var path = href.replace(/^https?:\/\/(?:www\.)?casaprivee\.com\/?/i, '').replace(/#.*$/, '').replace(/\/$/, '');
+            e.preventDefault();
+            if (!path || path === 'en-us') {
+                window.location.href = window.location.pathname.includes('/pages/') ? '../index.php' : 'index.php';
+            } else {
+                var targetFile = path.replace(/\//g, '__') + '.php';
+                window.location.href = window.location.pathname.includes('/pages/') ? targetFile : 'pages/' + targetFile;
+            }
+        }
+    }, true);
+
+    document.addEventListener('dblclick', function(e) {
+        var a = e.target.closest('a');
+        if (!a) return;
+        var href = a.getAttribute('href');
+        if (!href || href === '#' || href === '#top') {
+            e.preventDefault();
+        }
+    }, true);
+
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initVideos);
     } else {
