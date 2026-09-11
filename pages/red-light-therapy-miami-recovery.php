@@ -778,6 +778,25 @@ PLAu:16
     opacity: 1 !important;
     visibility: visible !important;
 }
+/* Social share icons footer styling */
+.av-social-sharing-box .av-share-box ul li a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+.av-social-sharing-box .av-share-box ul li a:hover {
+    border-color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-2px);
+}
 </style>
 </head><body class="wp-singular post-template-default single single-post postid-3093 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami post_tag-athleticrecovery post_tag-atpproduction post_tag-biohackingmiami post_tag-casaprivee post_tag-davincitheralight360 post_tag-executivewellness post_tag-fullbodyredlighttherapy post_tag-inflammationreduction post_tag-mitochondrialhealth post_tag-musclerecovery post_tag-noninvasivetherapy post_tag-peakperformance post_tag-performancerecovery post_tag-recoveryoptimization post_tag-recoverytherapymiami post_tag-redlighttherapymiami post_tag-sleepoptimization post_tag-sportsrecovery post_tag-stressmanagement post_tag-wellnesstechnology avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
 <script type="application/ld+json">

@@ -757,6 +757,25 @@ PLAu:16
     opacity: 1 !important;
     visibility: visible !important;
 }
+/* Social share icons footer styling */
+.av-social-sharing-box .av-share-box ul li a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+.av-social-sharing-box .av-share-box ul li a:hover {
+    border-color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-2px);
+}
 </style>
 </head><body class="wp-singular post-template-default single single-post postid-2781 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami post_tag-advanced-light-therapy post_tag-anti-stress-therapy post_tag-body-recovery-treatment post_tag-casa-privee-wellness post_tag-full-body-light-therapy post_tag-full-body-wellness post_tag-holistic-wellness post_tag-infrared-light-therapy post_tag-light-therapy-benefits post_tag-muscle-recovery post_tag-natural-healing-therapy post_tag-recovery-and-relaxation post_tag-recovery-therapy post_tag-red-light-therapy post_tag-relaxation-therapy post_tag-sleep-improvement post_tag-stress-relief-therapy post_tag-theralight-360 post_tag-wellness-spa-services post_tag-wellness-treatment avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
 <script type="application/ld+json">

@@ -757,6 +757,25 @@ PLAu:16
     opacity: 1 !important;
     visibility: visible !important;
 }
+/* Social share icons footer styling */
+.av-social-sharing-box .av-share-box ul li a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+.av-social-sharing-box .av-share-box ul li a:hover {
+    border-color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-2px);
+}
 </style>
 </head><body class="wp-singular post-template-default single single-post postid-3053 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami post_tag-anxiety-support post_tag-brain-health post_tag-casa-privee post_tag-depression-treatment post_tag-drug-free-depression-treatment post_tag-mental-health-treatment post_tag-mental-healthcare post_tag-mental-wellness post_tag-miami-mental-health post_tag-neuro-star-tms-miami post_tag-neuro-star-tms-therapy post_tag-non-invasive-treatment post_tag-tms-therapy post_tag-transcranial-magnetic-stimulation post_tag-treatment-resistant-depression avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
 <script type="application/ld+json">

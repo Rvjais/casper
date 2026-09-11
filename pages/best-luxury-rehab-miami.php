@@ -780,6 +780,25 @@ PLAu:16
     opacity: 1 !important;
     visibility: visible !important;
 }
+/* Social share icons footer styling */
+.av-social-sharing-box .av-share-box ul li a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+.av-social-sharing-box .av-share-box ul li a:hover {
+    border-color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-2px);
+}
 </style>
 </head><body class="wp-singular post-template-default single single-post postid-2818 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-advanced-addiction-recovery-services post_tag-alcohol-rehab-miami post_tag-best-luxury-rehab-miami post_tag-brain-wellness-therapy-miami post_tag-confidential-rehab-services post_tag-executive-rehab-programs post_tag-holistic-addiction-treatment post_tag-luxury-detox-programs post_tag-luxury-drug-rehab-miami post_tag-luxury-rehab-center-miami post_tag-mental-wellness-programs-miami post_tag-miami-addiction-treatment-center post_tag-neuroscience-based-rehab post_tag-outpatient-addiction-treatment-miami post_tag-personalized-rehab-programs post_tag-private-rehab-miami post_tag-tms-therapy-for-addiction post_tag-vip-rehab-services-miami avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
 <script type="application/ld+json">
