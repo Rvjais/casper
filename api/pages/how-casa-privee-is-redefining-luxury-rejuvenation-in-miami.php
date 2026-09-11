@@ -782,25 +782,59 @@ PLAu:16
     position: relative !important;
     overflow: hidden !important;
 }
-.av-section-with-video-bg .av-section-video-bg {
+.av-section-with-video-bg .av-section-video-bg,
+.av-section-with-video-bg .avia-slideshow,
+.av-section-with-video-bg .avia-slideshow-inner,
+.av-section-with-video-bg .avia-slideshow-slide,
+.av-section-with-video-bg .avia-slide-wrap,
+.av-section-with-video-bg .mejs-container,
+.av-section-with-video-bg .mejs-inner,
+.av-section-with-video-bg .mejs-mediaelement,
+.av-section-with-video-bg mediaelementwrapper {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
     z-index: 0 !important;
+    background: transparent !important;
 }
-.av-section-with-video-bg .av-section-video-bg video {
+.av-section-with-video-bg video,
+.av-section-with-video-bg .av-section-video-bg video,
+.av-section-with-video-bg .mejs-mediaelement video {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
+    z-index: 0 !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 .av-section-with-video-bg .av-section-color-overlay-wrap {
     position: relative !important;
     z-index: 2 !important;
+}
+.av-section-with-video-bg .av-section-color-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
 }
 </style>
 </head><body class="wp-singular post-template-default single single-post postid-3016 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami post_tag-advanced-recovery-therapies post_tag-advanced-wellness-treatments-miami post_tag-anti-aging-treatments-miami post_tag-biohacking-wellness-miami post_tag-brain-optimization-therapy-miami post_tag-concierge-wellness-services post_tag-elite-wellness-services post_tag-executive-wellness-programs post_tag-high-end-medical-wellness-services post_tag-holistic-wellness-miami post_tag-hyperbaric-oxygen-therapy-miami post_tag-innovative-wellness-treatments-miami post_tag-iv-therapy-miami post_tag-luxury-rejuvenation-miami post_tag-luxury-wellness-miami post_tag-mental-wellness-programs post_tag-neurostimulation-therapy-miami post_tag-personalized-anti-aging-solutions post_tag-personalized-wellness-programs post_tag-preventive-wellness-care post_tag-private-wellness-clinic-miami post_tag-regenerative-medicine-miami post_tag-vip-wellness-experience-miami post_tag-wellness-and-recovery-miami avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -1315,4 +1349,41 @@ var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiratio
             var trafficScript = document.createElement('script'); trafficScript.src = 'https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'; window.document.head.appendChild(trafficScript);</script>
 <script>window.addEventListener('click', function (elem) { var _elem$target, _elem$target$dataset, _window, _window$_trfq; return (elem === null || elem === void 0 ? void 0 : (_elem$target = elem.target) === null || _elem$target === void 0 ? void 0 : (_elem$target$dataset = _elem$target.dataset) === null || _elem$target$dataset === void 0 ? void 0 : _elem$target$dataset.eid) && ((_window = window) === null || _window === void 0 ? void 0 : (_window$_trfq = _window._trfq) === null || _window$_trfq === void 0 ? void 0 : _window$_trfq.push(["cmdLogEvent", "click", elem.target.dataset.eid]));});</script>
 <script onload="window.tti.calculateTTI()" src="../_external/img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"></script>
+<script id="casper-video-autoplay-helper">
+(function() {
+    function initVideos() {
+        var videos = document.querySelectorAll('.av-section-video-bg video, video.avia_video, .avia-section video');
+        videos.forEach(function(v) {
+            v.muted = true;
+            v.defaultMuted = true;
+            v.playsInline = true;
+            v.loop = true;
+            v.autoplay = true;
+            v.setAttribute('muted', '');
+            v.setAttribute('playsinline', '');
+            v.setAttribute('autoplay', '');
+            v.setAttribute('loop', '');
+            var p = v.play();
+            if (p !== undefined) {
+                p.catch(function() {
+                    var startPlay = function() {
+                        v.play();
+                        ['click', 'touchstart', 'scroll', 'mousemove'].forEach(function(evt) {
+                            document.removeEventListener(evt, startPlay);
+                        });
+                    };
+                    ['click', 'touchstart', 'scroll', 'mousemove'].forEach(function(evt) {
+                        document.addEventListener(evt, startPlay, { once: true });
+                    });
+                });
+            }
+        });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initVideos);
+    } else {
+        initVideos();
+    }
+})();
+</script>
 </body></html>

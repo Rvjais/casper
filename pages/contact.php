@@ -835,25 +835,59 @@ PLAu:16
     position: relative !important;
     overflow: hidden !important;
 }
-.av-section-with-video-bg .av-section-video-bg {
+.av-section-with-video-bg .av-section-video-bg,
+.av-section-with-video-bg .avia-slideshow,
+.av-section-with-video-bg .avia-slideshow-inner,
+.av-section-with-video-bg .avia-slideshow-slide,
+.av-section-with-video-bg .avia-slide-wrap,
+.av-section-with-video-bg .mejs-container,
+.av-section-with-video-bg .mejs-inner,
+.av-section-with-video-bg .mejs-mediaelement,
+.av-section-with-video-bg mediaelementwrapper {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
     z-index: 0 !important;
+    background: transparent !important;
 }
-.av-section-with-video-bg .av-section-video-bg video {
+.av-section-with-video-bg video,
+.av-section-with-video-bg .av-section-video-bg video,
+.av-section-with-video-bg .mejs-mediaelement video {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
+    z-index: 0 !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 .av-section-with-video-bg .av-section-color-overlay-wrap {
     position: relative !important;
     z-index: 2 !important;
+}
+.av-section-with-video-bg .av-section-color-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
 }
 </style>
 </head><body class="wp-singular page-template-default page page-id-428 wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-page avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -1394,4 +1428,41 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
             var trafficScript = document.createElement('script'); trafficScript.src = 'https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'; window.document.head.appendChild(trafficScript);</script>
 <script>window.addEventListener('click', function (elem) { var _elem$target, _elem$target$dataset, _window, _window$_trfq; return (elem === null || elem === void 0 ? void 0 : (_elem$target = elem.target) === null || _elem$target === void 0 ? void 0 : (_elem$target$dataset = _elem$target.dataset) === null || _elem$target$dataset === void 0 ? void 0 : _elem$target$dataset.eid) && ((_window = window) === null || _window === void 0 ? void 0 : (_window$_trfq = _window._trfq) === null || _window$_trfq === void 0 ? void 0 : _window$_trfq.push(["cmdLogEvent", "click", elem.target.dataset.eid]));});</script>
 <script onload="window.tti.calculateTTI()" src="../_external/img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"></script>
-<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe frameborder="0" name="c-nttgx073enj6" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" scrolling="no" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=8x-4t2pegToiW8KmThtO4AQt&amp;k=6LeIVK0sAAAAADpGDUbCcdFmev3de39dfak7Zs82&amp;bft=0dAFcWeA6Wgsz8RgIo4PceH2hcorxRIKgfT_QGvzHfJNRRO8hNfsWYq16MD51ECzbXQTnjcUl8k3RiYT42zZe9Su0HAlKzCslahA" style="width: 100%; height: 100%;" title="recaptcha challenge expires in two minutes"></iframe></div></div></body></html>
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe frameborder="0" name="c-nttgx073enj6" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" scrolling="no" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=8x-4t2pegToiW8KmThtO4AQt&amp;k=6LeIVK0sAAAAADpGDUbCcdFmev3de39dfak7Zs82&amp;bft=0dAFcWeA6Wgsz8RgIo4PceH2hcorxRIKgfT_QGvzHfJNRRO8hNfsWYq16MD51ECzbXQTnjcUl8k3RiYT42zZe9Su0HAlKzCslahA" style="width: 100%; height: 100%;" title="recaptcha challenge expires in two minutes"></iframe></div></div><script id="casper-video-autoplay-helper">
+(function() {
+    function initVideos() {
+        var videos = document.querySelectorAll('.av-section-video-bg video, video.avia_video, .avia-section video');
+        videos.forEach(function(v) {
+            v.muted = true;
+            v.defaultMuted = true;
+            v.playsInline = true;
+            v.loop = true;
+            v.autoplay = true;
+            v.setAttribute('muted', '');
+            v.setAttribute('playsinline', '');
+            v.setAttribute('autoplay', '');
+            v.setAttribute('loop', '');
+            var p = v.play();
+            if (p !== undefined) {
+                p.catch(function() {
+                    var startPlay = function() {
+                        v.play();
+                        ['click', 'touchstart', 'scroll', 'mousemove'].forEach(function(evt) {
+                            document.removeEventListener(evt, startPlay);
+                        });
+                    };
+                    ['click', 'touchstart', 'scroll', 'mousemove'].forEach(function(evt) {
+                        document.addEventListener(evt, startPlay, { once: true });
+                    });
+                });
+            }
+        });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initVideos);
+    } else {
+        initVideos();
+    }
+})();
+</script>
+</body></html>
