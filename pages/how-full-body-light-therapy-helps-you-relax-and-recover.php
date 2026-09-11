@@ -776,8 +776,36 @@ PLAu:16
     background-color: rgba(255, 255, 255, 0.15) !important;
     transform: translateY(-2px);
 }
+/* Video background enhancements */
+.mejs-overlay-error {
+    display: none !important;
+}
+.av-section-with-video-bg {
+    position: relative !important;
+    overflow: hidden !important;
+}
+.av-section-with-video-bg .av-section-video-bg {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+}
+.av-section-with-video-bg .av-section-video-bg video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.av-section-with-video-bg .av-section-color-overlay-wrap {
+    position: relative !important;
+    z-index: 2 !important;
+}
 </style>
-</head><body class="wp-singular post-template-default single single-post postid-2781 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami post_tag-advanced-light-therapy post_tag-anti-stress-therapy post_tag-body-recovery-treatment post_tag-casa-privee-wellness post_tag-full-body-light-therapy post_tag-full-body-wellness post_tag-holistic-wellness post_tag-infrared-light-therapy post_tag-light-therapy-benefits post_tag-muscle-recovery post_tag-natural-healing-therapy post_tag-recovery-and-relaxation post_tag-recovery-therapy post_tag-red-light-therapy post_tag-relaxation-therapy post_tag-sleep-improvement post_tag-stress-relief-therapy post_tag-theralight-360 post_tag-wellness-spa-services post_tag-wellness-treatment avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
+</head><body class="wp-singular post-template-default single single-post postid-2781 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami post_tag-advanced-light-therapy post_tag-anti-stress-therapy post_tag-body-recovery-treatment post_tag-casa-privee-wellness post_tag-full-body-light-therapy post_tag-full-body-wellness post_tag-holistic-wellness post_tag-infrared-light-therapy post_tag-light-therapy-benefits post_tag-muscle-recovery post_tag-natural-healing-therapy post_tag-recovery-and-relaxation post_tag-recovery-therapy post_tag-red-light-therapy post_tag-relaxation-therapy post_tag-sleep-improvement post_tag-stress-relief-therapy post_tag-theralight-360 post_tag-wellness-spa-services post_tag-wellness-treatment avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

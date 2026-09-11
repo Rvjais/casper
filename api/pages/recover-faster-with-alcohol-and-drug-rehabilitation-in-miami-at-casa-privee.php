@@ -776,8 +776,36 @@ PLAu:16
     background-color: rgba(255, 255, 255, 0.15) !important;
     transform: translateY(-2px);
 }
+/* Video background enhancements */
+.mejs-overlay-error {
+    display: none !important;
+}
+.av-section-with-video-bg {
+    position: relative !important;
+    overflow: hidden !important;
+}
+.av-section-with-video-bg .av-section-video-bg {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+}
+.av-section-with-video-bg .av-section-video-bg video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.av-section-with-video-bg .av-section-color-overlay-wrap {
+    position: relative !important;
+    z-index: 2 !important;
+}
 </style>
-</head><body class="wp-singular post-template-default single single-post postid-3000 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-addictionrecovery post_tag-addictiontreatmentmiami post_tag-alcoholaddictiontreatment post_tag-alcoholanddrugrehabilitationmiami post_tag-alcoholrehabilitationmiami post_tag-alcoholtreatmentmiami post_tag-drugaddictiontreatment post_tag-drugrehabilitationmiami post_tag-drugtreatmentmiami post_tag-luxuryrehabmiami post_tag-miamialcoholdrugaddictionrehabilitation post_tag-personalizedaddictiontreatment post_tag-recoveryjourney post_tag-substanceabusetreatment post_tag-casaprivee post_tag-substanceabusetreatmentcasaprivee avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
+</head><body class="wp-singular post-template-default single single-post postid-3000 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-addictionrecovery post_tag-addictiontreatmentmiami post_tag-alcoholaddictiontreatment post_tag-alcoholanddrugrehabilitationmiami post_tag-alcoholrehabilitationmiami post_tag-alcoholtreatmentmiami post_tag-drugaddictiontreatment post_tag-drugrehabilitationmiami post_tag-drugtreatmentmiami post_tag-luxuryrehabmiami post_tag-miamialcoholdrugaddictionrehabilitation post_tag-personalizedaddictiontreatment post_tag-recoveryjourney post_tag-substanceabusetreatment post_tag-casaprivee post_tag-substanceabusetreatmentcasaprivee avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

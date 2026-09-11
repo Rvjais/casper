@@ -775,8 +775,36 @@ PLAu:16
     background-color: rgba(255, 255, 255, 0.15) !important;
     transform: translateY(-2px);
 }
+/* Video background enhancements */
+.mejs-overlay-error {
+    display: none !important;
+}
+.av-section-with-video-bg {
+    position: relative !important;
+    overflow: hidden !important;
+}
+.av-section-with-video-bg .av-section-video-bg {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+}
+.av-section-with-video-bg .av-section-video-bg video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.av-section-with-video-bg .av-section-color-overlay-wrap {
+    position: relative !important;
+    z-index: 2 !important;
+}
 </style>
-</head><body class="wp-singular page-template-default page page-id-1100 wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-page avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
+</head><body class="wp-singular page-template-default page page-id-1100 wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-page avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

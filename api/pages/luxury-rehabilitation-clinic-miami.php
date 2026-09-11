@@ -799,8 +799,36 @@ PLAu:16
     background-color: rgba(255, 255, 255, 0.15) !important;
     transform: translateY(-2px);
 }
+/* Video background enhancements */
+.mejs-overlay-error {
+    display: none !important;
+}
+.av-section-with-video-bg {
+    position: relative !important;
+    overflow: hidden !important;
+}
+.av-section-with-video-bg .av-section-video-bg {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+}
+.av-section-with-video-bg .av-section-video-bg video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.av-section-with-video-bg .av-section-color-overlay-wrap {
+    position: relative !important;
+    z-index: 2 !important;
+}
 </style>
-</head><body class="wp-singular post-template-default single single-post postid-2627 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-addiction-recovery-miami post_tag-advanced-drug-rehab-miami post_tag-advanced-neurological-treatment-miami post_tag-affordable-luxury-rehab-miami post_tag-alcohol-and-drug-detox-miami post_tag-brain-health-rehabilitation post_tag-confidential-rehab-services-miami post_tag-customized-rehab-programs-miami post_tag-discreet-addiction-treatment post_tag-exclusive-addiction-recovery-clinic post_tag-executive-addiction-recovery-miami post_tag-executive-rehab-miami post_tag-high-end-rehab-treatment-miami post_tag-holistic-addiction-recovery post_tag-luxury-rehabilitation-clinic-miami post_tag-neuroscience-based-rehab post_tag-personalized-rehab-services post_tag-private-detox-services-miami post_tag-private-rehab-facility-miami post_tag-professional-rehab-clinic-miami post_tag-vip-rehabilitation-services avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
+</head><body class="wp-singular post-template-default single single-post postid-2627 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-addiction-recovery-miami post_tag-advanced-drug-rehab-miami post_tag-advanced-neurological-treatment-miami post_tag-affordable-luxury-rehab-miami post_tag-alcohol-and-drug-detox-miami post_tag-brain-health-rehabilitation post_tag-confidential-rehab-services-miami post_tag-customized-rehab-programs-miami post_tag-discreet-addiction-treatment post_tag-exclusive-addiction-recovery-clinic post_tag-executive-addiction-recovery-miami post_tag-executive-rehab-miami post_tag-high-end-rehab-treatment-miami post_tag-holistic-addiction-recovery post_tag-luxury-rehabilitation-clinic-miami post_tag-neuroscience-based-rehab post_tag-personalized-rehab-services post_tag-private-detox-services-miami post_tag-private-rehab-facility-miami post_tag-professional-rehab-clinic-miami post_tag-vip-rehabilitation-services avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

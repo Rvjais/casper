@@ -799,8 +799,36 @@ PLAu:16
     background-color: rgba(255, 255, 255, 0.15) !important;
     transform: translateY(-2px);
 }
+/* Video background enhancements */
+.mejs-overlay-error {
+    display: none !important;
+}
+.av-section-with-video-bg {
+    position: relative !important;
+    overflow: hidden !important;
+}
+.av-section-with-video-bg .av-section-video-bg {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+}
+.av-section-with-video-bg .av-section-video-bg video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.av-section-with-video-bg .av-section-color-overlay-wrap {
+    position: relative !important;
+    z-index: 2 !important;
+}
 </style>
-</head><body class="wp-singular post-template-default single single-post postid-2578 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-advanced-brain-clinic-miami post_tag-casa-privee post_tag-concierge-addiction-treatment post_tag-confidential-drug-rehab-miami post_tag-discreet-addiction-recovery post_tag-executive-rehab-programs post_tag-high-end-rehab-services post_tag-holistic-addiction-treatment post_tag-hyperbaric-oxygen-therapy-miami post_tag-luxury-addiction-clinic-miami post_tag-luxury-rehab-miami post_tag-outpatient-addiction-treatment post_tag-personalized-addiction-treatment post_tag-private-addiction-treatment-miami post_tag-tms-therapy-for-addiction avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
+</head><body class="wp-singular post-template-default single single-post postid-2578 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-advanced-brain-clinic-miami post_tag-casa-privee post_tag-concierge-addiction-treatment post_tag-confidential-drug-rehab-miami post_tag-discreet-addiction-recovery post_tag-executive-rehab-programs post_tag-high-end-rehab-services post_tag-holistic-addiction-treatment post_tag-hyperbaric-oxygen-therapy-miami post_tag-luxury-addiction-clinic-miami post_tag-luxury-rehab-miami post_tag-outpatient-addiction-treatment post_tag-personalized-addiction-treatment post_tag-private-addiction-treatment-miami post_tag-tms-therapy-for-addiction avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

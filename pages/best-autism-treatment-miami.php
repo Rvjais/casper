@@ -799,8 +799,36 @@ PLAu:16
     background-color: rgba(255, 255, 255, 0.15) !important;
     transform: translateY(-2px);
 }
+/* Video background enhancements */
+.mejs-overlay-error {
+    display: none !important;
+}
+.av-section-with-video-bg {
+    position: relative !important;
+    overflow: hidden !important;
+}
+.av-section-with-video-bg .av-section-video-bg {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+}
+.av-section-with-video-bg .av-section-video-bg video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.av-section-with-video-bg .av-section-color-overlay-wrap {
+    position: relative !important;
+    z-index: 2 !important;
+}
 </style>
-</head><body class="wp-singular post-template-default single single-post postid-2809 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-advanced-autism-therapies-miami post_tag-autism-behavioral-support-services post_tag-autism-brain-optimization-programs post_tag-autism-care-specialists-miami post_tag-autism-cognitive-enhancement-therapy post_tag-autism-diagnostic-services-miami post_tag-autism-neurodevelopmental-support post_tag-autism-spectrum-disorder-treatment post_tag-autism-support-programs-miami post_tag-autism-therapy-services-miami post_tag-autism-treatment-center-miami post_tag-autism-wellness-programs post_tag-best-autism-treatment-miami post_tag-brain-health-treatment-for-autism post_tag-casa-privee post_tag-child-development-therapy-miami post_tag-cognitive-therapy-for-autism post_tag-comprehensive-autism-care-services post_tag-concierge-autism-care-miami post_tag-developmental-disorder-treatment-miami post_tag-early-intervention-autism-therapy post_tag-family-autism-support-services post_tag-holistic-autism-care-miami post_tag-hyperbaric-oxygen-therapy-for-autism post_tag-innovative-autism-treatment-programs post_tag-neurological-autism-treatment post_tag-neuromodulation-therapy-for-autism post_tag-pediatric-autism-care-miami post_tag-personalized-autism-care-miami post_tag-precision-medicine-for-autism avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">//Local Location Schema code
+</head><body class="wp-singular post-template-default single single-post postid-2809 single-format-standard wp-theme-enfold wp-child-theme-enfold-child stretched rtl_columns av-curtain-numeric unselectable post-type-post category-casa-privee-miami category-luxury-addiction-clinic-in-miami post_tag-advanced-autism-therapies-miami post_tag-autism-behavioral-support-services post_tag-autism-brain-optimization-programs post_tag-autism-care-specialists-miami post_tag-autism-cognitive-enhancement-therapy post_tag-autism-diagnostic-services-miami post_tag-autism-neurodevelopmental-support post_tag-autism-spectrum-disorder-treatment post_tag-autism-support-programs-miami post_tag-autism-therapy-services-miami post_tag-autism-treatment-center-miami post_tag-autism-wellness-programs post_tag-best-autism-treatment-miami post_tag-brain-health-treatment-for-autism post_tag-casa-privee post_tag-child-development-therapy-miami post_tag-cognitive-therapy-for-autism post_tag-comprehensive-autism-care-services post_tag-concierge-autism-care-miami post_tag-developmental-disorder-treatment-miami post_tag-early-intervention-autism-therapy post_tag-family-autism-support-services post_tag-holistic-autism-care-miami post_tag-hyperbaric-oxygen-therapy-for-autism post_tag-innovative-autism-treatment-programs post_tag-neurological-autism-treatment post_tag-neuromodulation-therapy-for-autism post_tag-pediatric-autism-care-miami post_tag-personalized-autism-care-miami post_tag-precision-medicine-for-autism avia-responsive-images-support" data-rsssl="1" id="top" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
